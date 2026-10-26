@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Bag | Đặt hàng mẫu</title>
+</head>
+<body bgcolor="#F7FAFF">
+
+  <!-- HEADER -->
+  <table bgcolor="#123A69" border="0" cellpadding="15" cellspacing="0" width="100%">
+    <tr>
+      <td align="center">
+        <font color="#FFFFFF" size="7"><b>◆ URBAN BAG</b></font><br/>
+        <font color="#FCD584" size="4">CARRY YOUR JOURNEY · TRAVEL SMART</font><br/>
+        <font color="#FFFFFF" size="2">Cửa hàng Balo &amp; Phụ kiện | HTML ONLY</font>
+      </td>
+    </tr>
+  </table>
+
+  <!-- MENU -->
+  <table bgcolor="#DCEAF9" border="0" cellpadding="12" cellspacing="0" width="100%">
+    <tr>
+      <td align="center">
+        <nav aria-label="Điều hướng chính">
+          <a href="index.html">⌂ Trang chủ</a> | 
+          <a href="index.html#san-pham">◈ Sản phẩm</a> | 
+          <a href="chi-tiet.html">▤ Chi tiết</a> | 
+          <a href="bang-gia.html">▦ Bảng tổng hợp</a> | 
+          <a href="dat-hang.html">✉ Đặt hàng mẫu</a>
+        </nav>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <div style="width: 80%; margin: 0 auto;">
+    <h2>ĐIỀN THÔNG TIN ĐẶT MẪU SẢN PHẨM</h2>
+    <form action="xac-nhan.html" method="get">
+      
+      <!-- Thông tin người đặt -->
+      <fieldset>
+        <legend>Thông tin người đặt</legend>
+        <p>
+          <label for="ten">Họ tên *</label><br>
+          <input autocomplete="name" id="ten" maxlength="60" minlength="2" name="hoten" placeholder="Nguyen Van A" required type="text">
+        </p>
+        <p>
+          <label for="email">Email *</label><br>
+          <input autocomplete="email" id="email" name="email" placeholder="demo@example.com" required type="email">
+        </p>
+        <p>
+          <label for="phone">Điện thoại</label><br>
+          <input id="phone" name="phone" placeholder="0900000000" type="tel">
+        </p>
+      </fieldset>
+
+      <!-- Chi tiết sản phẩm -->
+      <fieldset>
+        <legend>Chi tiết sản phẩm</legend>
+        <p>
+          <label for="product">Mẫu sản phẩm *</label><br/>
+          <select id="product" name="maSanPham" required="">
+            <option value="">-- Chọn sản phẩm --</option>
+            <option value="BL01">BL01 - Balo Laptop Urban Pro (690.000 đ)</option>
+            <option value="BL02">BL02 - Balo Du Lịch Voyager (990.000 đ)</option>
+            <option value="BL03">BL03 - Balo Thời Trang Minimal (550.000 đ)</option>
+            <option value="BL04">BL04 - Balo Chống Trộm Secur (890.000 đ)</option>
+            <option value="BL05">BL05 - Balo Thể Thao Active (750.000 đ)</option>
+            <option value="BL06">BL06 - Balo Da Cao Cấp Retro (1.350.000 đ)</option>
+            <option value="BL07">BL07 - Túi Xách Laptop Briefcase (680.000 đ)</option>
+            <option value="BL08">BL08 - Túi Đeo Chéo Sling Bag (320.000 đ)</option>
+            <option value="BL09">BL09 - Túi Trống Du Lịch Holdall (890.000 đ)</option>
+            <option value="BL10">BL10 - Túi Đựng Phụ Kiện Tech Pouch (220.000 đ)</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="color">Màu sắc *</label><br/>
+          <select id="color" name="mauSac" required="">
+            <option value="">-- Chọn màu --</option>
+            <option value="den">Đen tuyền</option>
+            <option value="xam">Xám khói</option>
+            <option value="xanh">Xanh navy</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="quantity">Số lượng (1-5)</label><br/>
+          <input id="quantity" max="5" min="1" name="soLuong" required="" step="1" type="number" value="1"/>
+        </p>
+
+        <fieldset>
+          <legend>Hình thức nhận hàng</legend>
+          <label><input name="giaoHang" required="" type="radio" value="tai-cua-hang"/> Nhận tại cửa hàng</label><br/>
+          <label><input name="giaoHang" type="radio" value="giao-tan-noi"/> Giao tận nơi</label>
+        </fieldset>
+
+        <p>
+          <label for="note">Ghi chú</label><br/>
+          <textarea cols="40" id="note" maxlength="300" name="ghiChu" placeholder="Ghi chú đơn hàng (không bắt buộc)" rows="4"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <label>
+          <input name="dongY" required="" type="checkbox" value="yes"/> 
+          Tôi hiểu đây chỉ là form thực hành, không tạo đơn hàng thật *
+        </label>
+      </p>
+      <button type="submit">Gửi yêu cầu mẫu</button>
+      <button type="reset">Nhập lại</button>
+    </form>
+  </div>
+  <br>
+
+  <!-- FOOTER -->
+  <table bgcolor="#123A69" border="0" cellpadding="16" cellspacing="0" width="100%">
+    <tr>
+      <td align="center">
+        <font color="white"><b>◆ URBAN BAG</b></font> · 10 sản phẩm demo · © 2026<br/>
+        <font color="#FFDC91">Dữ liệu, giá bán và đơn hàng đều mang tính minh họa phục vụ học tập.</font><br/>
+        <a href="index.html">⇡ Quay lại trang chủ</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
